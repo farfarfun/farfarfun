@@ -1,4 +1,4 @@
-#https://github.com/marketplace/actions/hub-mirror-action
+# https://github.com/marketplace/actions/hub-mirror-action
 name: sync to gitee
 on:
   push:
