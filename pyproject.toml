@@ -1,6 +1,6 @@
 [project]
 name = "farfarfun"
-version = "0.1.18"
+version = "0.1.19"
 description = "farfarfun"
 readme = "README.md"
 requires-python = ">=3.10"
