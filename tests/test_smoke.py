@@ -1,8 +1,7 @@
-# NOTE: This test is intentionally minimal.
+# 注意：此测试保持最小化。
 #
-# farfarfun's top-level package has an empty __init__.py and no
-# submodules; this smoke test only verifies that the package imports
-# cleanly.
+# farfarfun 顶层包只有空的 __init__.py，没有子模块；此冒烟测试只验证
+# 包能够正常导入。
 import farfarfun
 
 
