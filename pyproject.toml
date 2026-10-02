@@ -1,7 +1,7 @@
 [project]
 name = "farfarfun"
-version = "0.1.19"
-description = "farfarfun"
+version = "0.1.20"
+description = "farfarfun 组织的 profile 仓库，同时发布同名 PyPI 占位包以保留组织包名，包内不含功能代码"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
@@ -14,6 +14,17 @@ dev = ["pytest>=8", "ruff>=0.13"]
 
 [tool.ruff]
 target-version = "py310"
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "RUF"]
+# RUF001-003：注释与 docstring 使用中文全角标点，是有意为之。
+ignore = ["RUF001", "RUF002", "RUF003"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# 显式指向 src，避免 pytest 导入到全局环境里已发布的 farfarfun 而不是工作区代码。
+pythonpath = ["src"]
 
 [build-system]
 requires = ["hatchling"]
