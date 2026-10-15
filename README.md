@@ -37,11 +37,11 @@ import farfarfun
 1. 在 Repositories 页面浏览仓库列表，选择感兴趣的项目。
 2. 进入对应仓库阅读 README，按照其中的安装与运行说明操作。
 
-示例命令：
+示例命令（以 [funutil](https://github.com/farfarfun/funutil) 为例，换成目标仓库名即可）：
 
 ```bash
-git clone https://github.com/farfarfun/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/farfarfun/funutil.git
+cd funutil
 # 按项目 README 中的说明运行
 ```
 
